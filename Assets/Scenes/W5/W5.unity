@@ -122,6 +122,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &109572811 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: f1e8e1bfafe7fa241ba6b4181f3eba85,
+    type: 3}
+  m_PrefabInstance: {fileID: 2002635953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &109572812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f1e8e1bfafe7fa241ba6b4181f3eba85,
+    type: 3}
+  m_PrefabInstance: {fileID: 2002635953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &343260629
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,6 +345,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1861218241}
+  - {fileID: 109572812}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1262529801
@@ -348,9 +361,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"animator","value":null,"typeHandle":{"Identification":"UnityEngine.Animator,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"animator","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
       UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _objectReferences:
+    - {fileID: 109572811}
 --- !u!114 &1262529802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,12 +661,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1262529799}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f1e8e1bfafe7fa241ba6b4181f3eba85,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.311954
+      value: -8.629246
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1e8e1bfafe7fa241ba6b4181f3eba85,
         type: 3}
@@ -662,7 +676,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f1e8e1bfafe7fa241ba6b4181f3eba85,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.4924674
+      value: -1.6882783
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1e8e1bfafe7fa241ba6b4181f3eba85,
         type: 3}
@@ -672,7 +686,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f1e8e1bfafe7fa241ba6b4181f3eba85,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1e8e1bfafe7fa241ba6b4181f3eba85,
         type: 3}
@@ -722,4 +736,3 @@ SceneRoots:
   - {fileID: 1767310516}
   - {fileID: 343260632}
   - {fileID: 1262529799}
-  - {fileID: 2002635953}
